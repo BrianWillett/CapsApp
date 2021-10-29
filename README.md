@@ -14,6 +14,6 @@
 
 
 
-Submit any bugs [here](https://github.com/BrianWillett/Roku-The-Searchening/issues "Bugs")
+Submit any bugs [here](https://github.com/BrianWillett/CapsApp/issues "Bugs")
 
 ###### Written at [REDspace](https://www.redspace.com "REDspace") by [Brian Willett](https://github.com/BrianWillett "Me")
