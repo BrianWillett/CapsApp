@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Leaving" extends="Group">
+    <script type="text/brightscript" uri="Leaving.brs" />
+<interface>
+    <function name="onOpen"/>
+    <field id="questColor" type="string" alias="question.color" />
+    <field id="yesBtnColor" type="string" alias="yes.btnColor" />
+    <field id="yesLabelColor" type="string" alias="yes.labelColor" />
+    <field id="noBtnColor" type="string" alias="no.btnColor" />
+    <field id="noLabelColor" type="string" alias="no.labelColor" />
+    <field id="exit" type="boolean" value="false" />
+</interface>
+<children>
+    <poster id="capsLogo" translation="[1300,500]" uri="pkg:/assets/images/logo.png" />
+    <Label id="question" text="Are you sure you want to exit the application?" translation="[450,400]">
+        <Font role="font" uri="pkg:/assets/fonts/Lato-Bold.ttf" size="50" />
+    </Label>
+    <LayoutGroup id="buttonGroup" itemSpacings="[50]" layoutDirection="horiz" translation="[630,500]" >
+        <GuessButton id="yes" playerName="Yes" btnWidth="300" btnHeight="100" />
+        <GuessButton id="no" playerName="No" btnWidth="300" btnHeight="100" />
+    </LayoutGroup>
+</children>
+</component>

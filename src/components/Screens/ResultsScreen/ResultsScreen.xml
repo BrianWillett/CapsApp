@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ResultsScreen" extends="Group">
+    <script type="text/brightscript" uri="ResultsScreen.brs" />
+    <interface>
+        <function name="onOpen" />
+    </interface>
+    <children>
+        <label id="percentage" width="550" height="400" horizAlign="center" vertAlign="center" translation="[685,200]">
+            <Font role="font" size="85" uri="pkg:/assets/fonts/Lato-Bold.ttf" />
+        </label>
+        <LayoutGroup id="options" itemSpacings="[20]" translation="[450,600]" layoutDirection="horiz">
+            <GuessButton id="playAgain" playerName="Play Again" />
+            <GuessButton id="homeScreen" playerName="Home Screen" />
+        </LayoutGroup>
+    </children>
+</component>

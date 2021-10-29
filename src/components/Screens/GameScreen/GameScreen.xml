@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="GameScreen" extends="Group">
+    <script type="text/brightscript" uri="GameScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+    <interface>
+        <function name="onOpen"/>
+        <field id="clueFontSize" type="integer" alias="clueFont.size" />
+        <field id="clueAlign" type="string" alias="clue.vertAlign" />
+    </interface>
+    <children>
+        <label id="score" translation="[35,20]" />
+        <label id="tracker" translation="[1620,20]" />
+        <label id="clue" width="1920" height="400" horizAlign="center" vertAlign="center" translation="[0,200]">
+            <font id="clueFont" role="font" uri="pkg:/assets/fonts/caps.ttf" size="300"/>
+        </label>
+        <label id="answer" width="500" horizAlign="center" vertAlign="center" translation="[1300,800]" wrap="true">
+            <font role="font" uri="pkg:/assets/fonts/caps.ttf" size="35"/>
+        </label>
+        <LayoutGroup id="options" itemSpacings="[20]" translation="[180,600]" layoutDirection="horiz"/>
+        <GuessButton id="next" playerName="Next Question" visible="false" translation="[710,900]"/>
+        <GuessButton id="results" playerName="Results" visible="false" translation="[710,900]"/>
+        <Group id="keyboardGroup" visible="false" >
+            <PinPad id="keyboard" translation="[400, 400]" pinLength="2" secureMode="false" />
+            <GuessButton id="submit" playerName="Submit" btnWidth="300" btnHeight="100" fntSize="30" translation="[800,570]"/>
+        </Group>
+    </children>
+</component>

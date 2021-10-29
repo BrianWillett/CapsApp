@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="HomeScreen" extends="Group">
+    <script type="text/brightscript" uri="HomeScreen.brs" />
+    <interface>
+        <function name="onOpen"/>
+    </interface>
+    <children>
+        <poster id="capsLogo" translation="[1300,500]" uri="pkg:/assets/images/logo.png" />
+        <LabelList id="modeSelectionList" translation="[300,200]">
+            <ContentNode id="selList" role="content">
+                <ContentNode title="Number" description="Number"/>
+                <ContentNode title="Name" description="Name"/>
+                <ContentNode title="Position" description="Position"/>
+                <ContentNode title="All Alone" description="All Alone"/>
+            </ContentNode>
+        </LabelList>
+    </children>
+</component>

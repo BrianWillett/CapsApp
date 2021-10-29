@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="GuessButton" extends="Group">
+    <script type="text/brightscript" uri="GuessButton.brs" />
+    <interface>
+        <field id="playerName" type="string" onChange="alignName" />
+        <field id="labelColor" type="string" alias="name.color" />
+        <field id="btnColor" type="string" alias="button.blendColor" />
+        <field id="fntSize" type="string" alias="fontSize.size" />
+        <field id="btnWidth" type="integer" onChange="adjustWidth" />
+        <field id="btnHeight" type="integer" onChange="adjustHeight" />
+    </interface>
+    <children>
+        <poster id="button" uri="pkg:/assets/images/btn.9.png" width="500" height="150"/>
+        <label id="name" width="500" height="150" wrap="true">
+            <font id="fontSize" role="font" uri="pkg:/assets/fonts/caps.ttf" size="30"/>
+        </label>
+    </children>
+</component>
