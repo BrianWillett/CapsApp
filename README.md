@@ -1,4 +1,4 @@
-## MTG: The Searchening (Roku Edition)
+## The Caps App
 
 
 #### This is built to run in VS Code with the [BrightScript Language][1] extension
